@@ -1,17 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="d794c0da-cc8c-4074-8a0e-12c57fe9ae7c" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/CovidAgent/Actions/Go.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/CovidAgent/Actions/Go.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/CovidAgent/CovidAgent.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/CovidAgent/CovidAgent.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/CovidAgent/CovidAgentState.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/CovidAgent/CovidAgentState.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/CovidAgent/CovidMain.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/CovidAgent/CovidMain.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/CovidAgent/Actions/Go.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/CovidAgent/Actions/Go.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/CovidAgent/CovidAgent.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/CovidAgent/CovidAgent.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/CovidAgent/CovidAgentState.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/CovidAgent/CovidAgentState.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/CovidAgent/CovidMain.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/CovidAgent/CovidMain.java" afterDir="false" />
-    </list>
+    <list default="true" id="d794c0da-cc8c-4074-8a0e-12c57fe9ae7c" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -64,7 +54,7 @@
       <option name="presentableId" value="Default" />
       <updated>1589396913565</updated>
       <workItem from="1589396923511" duration="1262000" />
-      <workItem from="1589398733316" duration="1557000" />
+      <workItem from="1589398733316" duration="1965000" />
     </task>
     <servers />
   </component>
@@ -72,25 +62,25 @@
     <option name="version" value="2" />
   </component>
   <component name="WindowStateProjectService">
-    <state width="1322" height="174" key="GridCell.Tab.0.bottom" timestamp="1589400127246">
+    <state width="1322" height="174" key="GridCell.Tab.0.bottom" timestamp="1589400302095">
       <screen x="1360" y="0" width="1366" height="728" />
     </state>
-    <state width="1322" height="174" key="GridCell.Tab.0.bottom/0.0.1360.728/1360.0.1366.728@1360.0.1366.728" timestamp="1589400127246" />
+    <state width="1322" height="174" key="GridCell.Tab.0.bottom/0.0.1360.728/1360.0.1366.728@1360.0.1366.728" timestamp="1589400302095" />
     <state width="1322" height="174" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1589398019636" />
-    <state width="1322" height="174" key="GridCell.Tab.0.center" timestamp="1589400127245">
+    <state width="1322" height="174" key="GridCell.Tab.0.center" timestamp="1589400302095">
       <screen x="1360" y="0" width="1366" height="728" />
     </state>
-    <state width="1322" height="174" key="GridCell.Tab.0.center/0.0.1360.728/1360.0.1366.728@1360.0.1366.728" timestamp="1589400127245" />
+    <state width="1322" height="174" key="GridCell.Tab.0.center/0.0.1360.728/1360.0.1366.728@1360.0.1366.728" timestamp="1589400302095" />
     <state width="1322" height="174" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1589398019635" />
-    <state width="1322" height="174" key="GridCell.Tab.0.left" timestamp="1589400127245">
+    <state width="1322" height="174" key="GridCell.Tab.0.left" timestamp="1589400302095">
       <screen x="1360" y="0" width="1366" height="728" />
     </state>
-    <state width="1322" height="174" key="GridCell.Tab.0.left/0.0.1360.728/1360.0.1366.728@1360.0.1366.728" timestamp="1589400127245" />
+    <state width="1322" height="174" key="GridCell.Tab.0.left/0.0.1360.728/1360.0.1366.728@1360.0.1366.728" timestamp="1589400302095" />
     <state width="1322" height="174" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1589398019635" />
-    <state width="1322" height="174" key="GridCell.Tab.0.right" timestamp="1589400127245">
+    <state width="1322" height="174" key="GridCell.Tab.0.right" timestamp="1589400302095">
       <screen x="1360" y="0" width="1366" height="728" />
     </state>
-    <state width="1322" height="174" key="GridCell.Tab.0.right/0.0.1360.728/1360.0.1366.728@1360.0.1366.728" timestamp="1589400127245" />
+    <state width="1322" height="174" key="GridCell.Tab.0.right/0.0.1360.728/1360.0.1366.728@1360.0.1366.728" timestamp="1589400302095" />
     <state width="1322" height="174" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1589398019636" />
     <state width="1322" height="217" key="GridCell.Tab.1.bottom" timestamp="1589398964876">
       <screen x="1360" y="0" width="1366" height="728" />
