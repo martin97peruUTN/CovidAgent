@@ -13,6 +13,9 @@ public class CovidPerception extends Perception {
     private ArrayList<Sick> sickArrayList;
 
     public CovidPerception() {
+        this.map = new ArrayList<Node>();
+        this.agentPosition = new Node();
+        this.sickArrayList = new ArrayList<Sick>();
     }
 
     public CovidPerception(Agent agent, Environment environment) {
