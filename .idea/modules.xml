@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/CovidAgent.iml" filepath="$PROJECT_DIR$/CovidAgent.iml" />
+      <module fileurl="file://$PROJECT_DIR$/faia.iml" filepath="$PROJECT_DIR$/faia.iml" />
     </modules>
   </component>
 </project>
