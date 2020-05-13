@@ -22,7 +22,7 @@ public class CovidAgent extends SearchBasedAgent {
         this.setAgentState(covidAgentState);
         Vector<SearchAction> operators = new Vector<SearchAction>();
 
-        for (Node n: ((CovidAgentState)this.getAgentState()).getMap()){
+        for (Node n: ((CovidAgentState)this.getAgentState()).getKnownMap()){
             operators.add(new Go(n));
         }
         operators.add(new MulctSick());
@@ -42,7 +42,7 @@ public class CovidAgent extends SearchBasedAgent {
         //Esto esta copiado de la otra version, confio en que ande jaja
         DepthFirstSearch depthFirstSearch = new DepthFirstSearch();
         Search dfsSolver = new Search(depthFirstSearch);
-        dfsSolver.setVisibleTree(Search.XML_TREE);
+        dfsSolver.setVisibleTree(Search.EFAIA_TREE);
         this.setSolver(dfsSolver);
 
         Action selectedAction = null;

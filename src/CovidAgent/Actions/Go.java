@@ -22,8 +22,9 @@ public class Go extends SearchAction {
         CovidAgentState agentState = (CovidAgentState) s;
         if(agentState.getPosition().getSuccessors().contains(objectiveNode)) {
             agentState.setPosition(objectiveNode);
+            return agentState;
         }
-        return agentState;
+        return null;
     }
 
     @Override
@@ -35,12 +36,10 @@ public class Go extends SearchAction {
     public EnvironmentState execute(AgentState ast, EnvironmentState est) {
         CovidAgentState covidAgentState = (CovidAgentState) ast;
         CovidEnvironmentState covidEnvironmentState = (CovidEnvironmentState) est;
-        if(covidAgentState.getPosition().getSuccessors().contains(objectiveNode)) {
-            covidAgentState.setPosition(objectiveNode);
-            covidEnvironmentState.setAgentPosition(objectiveNode);
+        if(this.execute((SearchBasedAgentState) ast)!=null) {
+            ((CovidEnvironmentState) est).setAgentPosition(this.objectiveNode);
         }
         return covidEnvironmentState;
-
     }
 
     @Override

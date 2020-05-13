@@ -9,30 +9,29 @@ import java.util.Objects;
 
 public class CovidAgentState extends SearchBasedAgentState {
 
-    private ArrayList<Node> map;
+    private ArrayList<Node> knownMap;
     private Node position;
     private ArrayList<Sick> sickArrayList;
 
     public CovidAgentState() {
-        this.map = new ArrayList<Node>();
+        this.knownMap = new ArrayList<Node>();
         this.sickArrayList = new ArrayList<Sick>();
         this.initState();
     }
 
     public CovidAgentState(ArrayList<Node> map, Node position, ArrayList<Sick> sickArrayList) {
-        this.map = map;
+        this.knownMap = map;
         this.position = position;
         this.sickArrayList = sickArrayList;
     }
 
-    public ArrayList<Node> getMap() {
-        return map;
+    public ArrayList<Node> getKnownMap() {
+        return knownMap;
     }
 
-    public void setMap(ArrayList<Node> map) {
-        this.map = map;
+    public void setKnownMap(ArrayList<Node> map) {
+        this.knownMap = knownMap;
     }
-
     public Node getPosition() {
         return position;
     }
@@ -62,9 +61,7 @@ public class CovidAgentState extends SearchBasedAgentState {
         //No estoy seguro que este clone ande 100%
         CovidAgentState newState = new CovidAgentState();
         newState.setPosition(position);
-        ArrayList<Node> newMap = (ArrayList<Node>) map.clone();
         ArrayList<Sick> newSickArrayList = (ArrayList<Sick>) sickArrayList.clone();
-        newState.setMap(newMap);
         newState.setSick(newSickArrayList);
         return newState;
     }
@@ -72,7 +69,7 @@ public class CovidAgentState extends SearchBasedAgentState {
     @Override
     public void updateState(Perception p) {
         CovidPerception covidPerception = (CovidPerception) p;
-        this.setMap(covidPerception.getMap());
+        this.setKnownMap(covidPerception.getMap());
         //Los de la posicion no se si va
         this.setPosition(covidPerception.getAgentPosition());
         this.setSick(covidPerception.getSickArrayList());
@@ -100,14 +97,14 @@ public class CovidAgentState extends SearchBasedAgentState {
         n202.addSuccessor(n102);
         n203.addSuccessor(n204);
         n204.addSuccessor(n104);
-        map.add(n101);
-        map.add(n102);
-        map.add(n103);
-        map.add(n104);
-        map.add(n201);
-        map.add(n202);
-        map.add(n203);
-        map.add(n204);
+        knownMap.add(n101);
+        knownMap.add(n102);
+        knownMap.add(n103);
+        knownMap.add(n104);
+        knownMap.add(n201);
+        knownMap.add(n202);
+        knownMap.add(n203);
+        knownMap.add(n204);
         position = n101;
         Sick sick1 = new Sick(1,n204,n103);
         sickArrayList.add(sick1);
@@ -122,14 +119,14 @@ public class CovidAgentState extends SearchBasedAgentState {
     public boolean equals(Object obj) {
         if (!(obj instanceof CovidAgentState))
             return false;
-        ArrayList<Node> objMap = ((CovidAgentState) obj).getMap();
+        ArrayList<Node> objMap = ((CovidAgentState) obj).getKnownMap();
         Node objPosition = ((CovidAgentState) obj).getPosition();
         ArrayList<Sick> objSick = ((CovidAgentState) obj).getSickArrayList();
         if(!objPosition.equals(position)){
             return false;
         }
         for(int i=0;i<objMap.size();i++){
-            if (!objMap.get(i).equals(map.get(i))){
+            if (!objMap.get(i).equals(knownMap.get(i))){
                 return false;
             }
         }
