@@ -50,6 +50,10 @@ public class Sick {
         this.mulctAmount = mulctAmount;
     }
 
+    public void addMulct(){
+        this.mulctAmount=this.mulctAmount+1;
+    }
+
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;

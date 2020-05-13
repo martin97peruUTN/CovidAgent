@@ -1,6 +1,7 @@
 package CovidAgent.Actions;
 
 import CovidAgent.CovidAgentState;
+import CovidAgent.CovidEnvironmentState;
 import CovidAgent.Node;
 import frsf.cidisi.faia.agent.search.SearchAction;
 import frsf.cidisi.faia.agent.search.SearchBasedAgentState;
@@ -19,11 +20,10 @@ public class Go extends SearchAction {
     @Override
     public SearchBasedAgentState execute(SearchBasedAgentState s) {
         CovidAgentState agentState = (CovidAgentState) s;
-        if(this.objectiveNode.getSuccessors().contains(s)){
-
+        if(agentState.getPosition().getSuccessors().contains(objectiveNode)) {
+            agentState.setPosition(objectiveNode);
         }
-
-        return null;
+        return agentState;
     }
 
     @Override
@@ -33,11 +33,19 @@ public class Go extends SearchAction {
 
     @Override
     public EnvironmentState execute(AgentState ast, EnvironmentState est) {
-        return null;
+        CovidAgentState covidAgentState = (CovidAgentState) ast;
+        CovidEnvironmentState covidEnvironmentState = (CovidEnvironmentState) est;
+        if(covidAgentState.getPosition().getSuccessors().contains(objectiveNode)) {
+            covidAgentState.setPosition(objectiveNode);
+            covidEnvironmentState.setAgentPosition(objectiveNode);
+        }
+        return covidEnvironmentState;
+
     }
 
     @Override
     public String toString() {
-        return null;
+        //TODO
+        return "String del Go del nodo "+objectiveNode.getId().toString();
     }
 }
